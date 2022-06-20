@@ -23,9 +23,9 @@ def preparation_and_results() -> Tuple[float, int, List]:
     response_time = []
     yield start_time, passed_time, response_time
 
-    print("Max time is:", max(response_time))
-    print("Min time is:", min(response_time))
-    print("Average time:", sum(response_time) / len(response_time))
+    logger.info(f"Max time is: {max(response_time)}")
+    logger.info(f"Min time is: {min(response_time)}")
+    logger.info(f"Average time: {sum(response_time) / len(response_time)}")
 
 
 class TestPerformance:
