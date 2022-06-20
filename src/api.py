@@ -1,10 +1,12 @@
-from fastapi import APIRouter, HTTPException
-from utils import read_file
-from typing import Dict, Optional
-from config import DELAY
-from random import random
 from asyncio import sleep
 from logging import getLogger
+from random import random
+from typing import Dict, Optional
+
+from fastapi import APIRouter, HTTPException
+
+from config import DELAY
+from utils import read_file
 
 logger = getLogger(__name__)
 router = APIRouter()

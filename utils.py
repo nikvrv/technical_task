@@ -1,9 +1,9 @@
-from pathlib import Path
-from pydantic import ValidationError
-from typing import Dict
-from logging import getLogger
 from json import loads
+from logging import getLogger
+from pathlib import Path
+from typing import Dict
 
+from pydantic import ValidationError
 
 log = getLogger(__name__)
 

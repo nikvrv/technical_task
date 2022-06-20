@@ -1,9 +1,11 @@
 import time
-import requests
-import pytest
-from config import API_URL
 from logging import getLogger
 from typing import Tuple, List
+
+import pytest
+import requests
+
+from config import API_URL
 
 logger = getLogger(__name__)
 
@@ -23,7 +25,7 @@ def preparation_and_results() -> Tuple[float, int, List]:
 
     print("Max time is:", max(response_time))
     print("Min time is:", min(response_time))
-    print("Average time:", sum(response_time)/len(response_time))
+    print("Average time:", sum(response_time) / len(response_time))
 
 
 class TestPerformance:

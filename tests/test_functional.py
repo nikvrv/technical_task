@@ -1,8 +1,9 @@
 import pytest
+import requests
+
+from config import API_URL
 from src.models import PeopleModel, PlanetModal, StarshipModel
 from utils import validate_json
-import requests
-from config import API_URL
 
 
 class TestPeople:
